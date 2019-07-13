@@ -1,0 +1,9 @@
+#!/bin/bash
+# suth 2019-07-12
+# Historically, '[su]do [th]unar". Suth runs thunar as root with persistent settings.
+# dbus output redirected to /tmp/suth.log for potential troubleshooting.
+# Optionally, run from thunar right click menu via set up 'thunar > edit > custom actions'.
+
+	trap 'cat /home/jeff/bin/suth' INT TERM EXIT
+	pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY dbus-run-session &>/tmp/suth.log thunar $(pwd)
+
