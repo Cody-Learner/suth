@@ -1,0 +1,50 @@
+# File: /home/jeff/.config/Thunar/uca.xml
+
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+<action>
+	<icon>utilities-terminal</icon>
+	<name>Open Terminal Here</name>
+	<submenu></submenu>
+	<unique-id>1678566424087510-1</unique-id>
+	<command>xfce4-terminal --working-directory=%f</command>
+	<description>Example for a custom action</description>
+	<range></range>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+</action>
+<action>
+	<icon>leafpad</icon>
+	<name>Sudo Leafpad</name>
+	<submenu></submenu>
+	<unique-id>1679089191028300-1</unique-id>
+	<command>pkexec leafpad %f</command>
+	<description>See custom: /usr/share/polkit-1/actions/org.leafpad.policy</description>
+	<range></range>
+	<patterns>*</patterns>
+	<text-files/>
+</action>
+<action>
+	<icon>ddcui</icon>
+	<name>Sudo Terminal</name>
+	<submenu></submenu>
+	<unique-id>1679089329806681-2</unique-id>
+	<command>xfce4-terminal --working-directory=%f --color-text red -e &apos;sudo -s&apos;</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>org.xfce.thunar</icon>
+	<name>Sudo Thunar</name>
+	<submenu></submenu>
+	<unique-id>1679089504022918-3</unique-id>
+	<command>pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY dbus-run-session &amp;&gt;/tmp/suth.log thunar $(pwd)</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+</actions>
