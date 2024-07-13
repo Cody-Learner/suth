@@ -1,5 +1,5 @@
-# File: /home/jeff/.config/Thunar/uca.xml
-
+					### File: /home/jeff/.config/Thunar/uca.xml            ###
+					### NOTE: These first lines need removed before using. ###
 <?xml version="1.0" encoding="UTF-8"?>
 <actions>
 <action>
