@@ -4,3 +4,4 @@
 
 	trap 'cat /home/jeff/bin/suth' INT TERM EXIT
 	pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY dbus-run-session &>/tmp/suth.log thunar /etc
+
