@@ -1,0 +1,6 @@
+#!/bin/bash
+
+## This is same as suth, but opens in /etc for/(used by) the toolbar shortcut.
+
+	trap 'cat /home/jeff/bin/suth' INT TERM EXIT
+	pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY dbus-run-session &>/tmp/suth.log thunar /etc
