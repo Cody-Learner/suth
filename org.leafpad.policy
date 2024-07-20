@@ -1,4 +1,4 @@
-			### FILE: /usr/share/polkit-1/actions/org.leafpad.policy
+			### FILE: /usr/share/polkit-1/actions/org.leafpad.policy 
 			### Delete these first three lines to use.
 
 <?xml version="1.0" encoding="UTF-8"?>
