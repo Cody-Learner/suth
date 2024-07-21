@@ -1,5 +1,5 @@
 # suth															<br>
-<br>
+
 Historically '[su]do [th]unar".												<br>
 Suth runs thunar as root (optionally launched from thunar right click menu) with persistent settings.			<br>
 															<br>
