@@ -2,16 +2,16 @@
 # suth.inst 2024-08-09
 # Installs thunar custom actions/config uca.xml.
 
-	printf '\f%s\f\n' "  Install script for suth. Installs thunar custom actions/config."
+	printf '\n%s\n\n' "  Install script for suth. Installs thunar custom actions/config."
 
 	cp uca.xml "${HOME}"/.config/Thunar/uca.xml
 
 if	[[ -s  ${HOME}/.config/Thunar/uca.xml ]] &&  grep -q suth ${HOME}/.config/Thunar/uca.xml ; then
-	printf '%s\f\n' "  File properties and contents of ${HOME}/.config/Thunar/uca.xml"
+	printf '%s\n\n' "  File properties and contents of ${HOME}/.config/Thunar/uca.xml"
 
 	ls -la ${HOME}/.config/Thunar/uca.xml
 	echo
 	cat ${HOME}/.config/Thunar/uca.xml
     else
-	printf '\f%s\f\n' "  Something went wrong."	
+	printf '\n%s\n\n' "  Something went wrong."	
 fi
